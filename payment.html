@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Payment Page</title>
+
+   <link rel="stylesheet" href="Payment.css">
+   
+   <script src="payment.js"></script>
+</head>
+
+<body>
+  <!--THIS COADING FOR HEADER AREA.. STARTED-->
+  <header>
+
+    <div class="logo"> 
+		  <a href="home.html"> 
+       <img src="image/logo.jpeg" height="50px" alt="Main logo">
+	    </a>
+    </div>
+
+    <nav>
+      <ul>
+		    <li><a href="to link the home page.html">Home</a></li>
+		    <li><a href="to link the newservise page">Services</a></li>
+		    <li><a href="to link the payment page">Payment</a></li>
+	      <li><a href="to link the profile page">Profile</a></li>
+		    
+        <div class="line">
+		      <li><a href="to link this place home page.html"><b>Log Out</b></a></li>
+        </div>
+
+      </ul>
+    </nav> 
+  </header>
+  <!--HEADER AREA COADING..END-->
+
+<h3 class="PaySize">Payment</h3>
+
+<!--to ged all details from user in form mathode..started-->
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <!--Form started-->
+      <form  name="myForm" method="POST" action = "payment.php" target=""  onsubmit="return validateForm()" >
+      </br>
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Details</h3>
+            <label> First Name </label>
+            <input type="text" name="fname" pattern="[a-z A-Z] + " placeholder="KijanAzardeen">
+            <label> Last Name </label>
+            <input type="text" name="lname" pattern="[a-z A-Z] + " placeholder="Azardeen">
+            <label> Bill Number</label>
+            <input type="text" name="billnum" pattern="[A-Z] {4} . [0-9] {5}" placeholder="HOLD45873">
+            <label> Mobile Number</label>
+            <input type="text" name="mobnum" pattern="[0-9] {10}" placeholder="0768888111">
+			      <label> Email Address </label>
+            <input type="text" name="email" placeholder="kijanasare321@gmail.com" required>
+            
+            <div>
+              <input type="checkbox" name="sendreceipt"> Send the Receipt Details to this Mail Address
+            </div>
+           
+          </div>
+
+          <div class="col-50">
+
+            <h3>Payment</h3>
+            <label>Accepted Cards</label>
+            <div class="payimage">
+              <img src="image/cards.png" height="36">
+            </div>
+            <label> Name on Card Holder </label>
+            <input type="text" name="cardname" placeholder="A Lakshmanan">
+            <label> Credit card number </label>
+            <input type="text" name="cardnumber" pattern="[0-9] {16}" placeholder="1111-2222-3333-4444">
+            
+            <label>Exp Month of Card</label>
+            <select name="expermonth" class="expermonth" >
+              <option value=""> - Select Exp Month - </option>
+              
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="Septemper">Septemper</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+            
+            <div class="row">
+
+              <div class="col-50">
+                <label>Exp Year</label>
+                <input type="text" name="expyear" pattern="[0-9] {4}" placeholder="2024">
+              </div>
+
+              <div class="col-50" >
+                <label>CVV</label>
+                <input type="text" name="cvv" pattern="[0-9]{3,4}" placeholder="126">
+              </div>
+
+            </div>
+            
+            </div>
+          </div>
+          
+        </div>
+        <!--Pay Submit Button--> 
+        <input  type="submit" id="btn" name="btn" value="Pay" class="submit">
+
+      </form>
+      <!--Form..End-->
+    </div>
+	<br>
+	<br>
+</div>
+
+
+<br>
+<br>
+
+<!--Fooder Coadings.. START-->
+<footer>
+
+	<div class="footer">
+		<div class="inner-footer">
+
+
+			<div class="footer-items">
+				<img src="image/logo.jpeg" height="50" alt="Hotel Website Logo">
+			    <p>
+            Hotel Reservation Website Customer Support helps you to manage your service requests and interact with us to resolve your problems.
+            faster and quality service, Customers are the backbone of our business, and there's more to the story. 
+            Take a look at what else you can do with the Hotel Reservation Website customer support.
+				  </p>
+			</div>
+
+			<div class="footer-items">
+				<h2 class="head">Quick Pages</h2>
+
+					<div class="border"></div>  <!--this is for border line-->
+
+					<ul>
+						<a href="home.html"><li>Home</li></a>
+						<a href="contactus.html"> <li>Contact Us</li></a>
+						<a href="baboutus.html"><li>About Us</li></a>
+					</ul>
+			</div>
+
+			<div class="footer-items">
+				<h2 class="head">Rights</h2>
+
+					<div class="border"></div>  <!--this is for border line-->
+
+					<ul>
+						<a href="policy page.html"><li>Privacy Policy</li></a>
+						<a href="Term and condition page.html"><li>Terms and Condition</li></a>
+						<a href="contract page.html"><li>Contract</li></a>
+					</ul>
+			</div>
+
+			<div class="footer-items">
+				<h2 class="head">Contact US</h2>
+					<div class="border"></div>  <!--this is for border line-->
+
+					  <div class="contact">
+              <a href="https://www.google.com/search?q=SLIIT+Road%2C+Malabe&bih=560&biw=1366&rlz=1C1KUBR_enLK991LK991&hl=en&ei=ty6JYrO2HN6b4t4P05C1mA0&oq=sliit+maa&gs_lcp=Cgdnd3Mtd2l6EAEYADICCCYyAggmMgIIJjICCCYyAggmOggILhDUAhCRAjoLCAAQgAQQsQMQgwE6CAgAELEDEIMBOgsILhCABBCxAxCDAToLCC4QsQMQxwEQowI6BAgAEAM6CwguEMcBENEDEJECOgUIABCRAjoICAAQgAQQsQM6BQgAEIAEOhEILhCABBCxAxCDARDHARCjAjoECAAQQzoHCAAQsQMQQzoRCC4QgAQQsQMQgwEQxwEQrwE6CwguEIAEEMcBEK8BOgQILhBDOgUILhCABEoECEEYAEoECEYYAFCNBljaKmC7PmgEcAF4AIABxAGIAYAMkgEEMC4xMJgBAKABAbABAMABAQ&sclient=gws-wiz#">
+					  	<img src="image/LOCATION.jpeg"  alt="">  
+              </a>  <!--if i click the loctn logo it will rediect the mab page-->
+					  	<span>KA, No.100, New Kandy Road, Malabe</span>
+				  	
+              <br>
+					  	<img src="image/mobile.png"  alt=""> 
+					  	<span>0768880000</span>
+					 
+              <br>
+					  	<img src="image/mail.png"  alt=""> 
+					  	<span>hotelpagesupport@gmail.com</span>
+					 
+				  </div>
+				
+		  </div>
+
+    <!--Paymen page bottom part-->    
+		<div class="footer-bottom">
+
+			<ul>
+				<div class="social">
+          <a href="https://www.whatsapp.com"><img src="image/Whatsapp_logo.png" height="25" width="25t"></a>
+					<a href="https://www.facebook.com"><img src="image/fb_logo.jpg" height="25" width="25t"></a>
+					<a href="https://www.linkedin.com"><img src="image/Linkedin_logo.png" height="25" width="25t"></a>
+          <a href="https://accounts.snapchat.com"><img src="image/snapchat_logo.jpg"  height="25" width="25t"></a>
+					<a href="https://twitter.com"><img src="image/twitter.png"  height="25" width="25t"></a>
+					<a href="https://www.instagram.com"><img src="image/instagram_logo.png" height="25" width="25t"></a>
+				</div>
+			</ul>
+
+			<h1> Copyrights 2022 &copy; About Us. All Rights resrved.</h1>
+			
+    </div>
+
+ </footer>
+  
+</body>
+</html>
